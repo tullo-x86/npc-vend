@@ -1,0 +1,9 @@
+{
+  "name": "npc-vend",
+  "version": "0.0.1",
+  "description": "hsbne vending machine yo",
+  "main": "server.js",
+  "repository": "",
+  "author": "a giant butt <butt@hsbne.org>",
+  
+}
