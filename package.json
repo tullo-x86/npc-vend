@@ -2,8 +2,19 @@
   "name": "npc-vend",
   "version": "0.0.1",
   "description": "hsbne vending machine yo",
-  "main": "server.js",
+  "main": "app.js",
   "repository": "",
   "author": "a giant butt <butt@hsbne.org>",
+  
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "ejs": "*",
+    "less-middleware": "*",
+    "johnny-five": "0.7.17"
+  }
   
 }
