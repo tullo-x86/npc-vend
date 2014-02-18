@@ -13,6 +13,11 @@ var path = require('path');
 
 var app = express();
 
+var server = http.createServer(app),
+	io = require('socket.io').listen(server);
+
+triggers.initialize(io);
+
 // all environments
 app.set('port', process.env.PORT || 5678);
 app.set('views', path.join(__dirname, 'views'));
@@ -36,8 +41,16 @@ app.get('/', routes.index);
 app.get('/test', test.route);
 app.get('/triggers', triggers.view);
 
-app.set('title', 'Express Test App')
+app.set('title', 'Express Test App');
 
-http.createServer(app).listen(app.get('port'), function(){
+server.listen(app.get('port'), function(){
     console.log('Express server listening on port ' + app.get('port'));
+});
+
+io.sockets.on('connection', function (socket) {
+  socket.emit('init', { hello: 'world' });
+  debugger;
+  socket.on('trigger', function (data) {
+    console.log('trigger fired: ' + JSON.stringify(data));
+  });
 });

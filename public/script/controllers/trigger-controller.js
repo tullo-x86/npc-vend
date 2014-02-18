@@ -12,7 +12,14 @@ triggerApp.controller('TriggerController', function ($scope) {
 
   var results = $scope.results = [{text:"Initialised."}];
 
+  var socket = io.connect('http://localhost');
+  socket.on('init', function (data) {
+    results.push({ text: "socket.io initialised"});
+    $scope.$apply();
+  });
+
   $scope.triggerClick = function(sw) {
   	results.push({ text: "Trigger clicked: " + sw.label });
+    socket.emit('trigger', sw);
   };
 });
