@@ -1,6 +1,6 @@
-var com = require("serialport");
-
-var id = '';
+var com = require("serialport"),
+    events = require("events");
+    id = '';
 // variable we regenerate the code into from binary chunks
 
   var reader = new com.SerialPort("/dev/ttyAMA0" , {
@@ -11,6 +11,9 @@ var id = '';
     flowControl: true,
     buffersize: 14 // this should prevent dramas if there's multiple cards.
   }, true); // this is the openImmediately flag [default is true anyway]
+
+var emitter = new events.EventEmitter;
+
 
 reader.open(function () {
   console.log('open'); // wait for device to open, then confirm.
@@ -23,6 +26,8 @@ reader.open(function () {
                 console.log("Stripped ID: " + idshort);
                 iddec = parseInt(idshort, 16); // turn it from hex to decimal
                 console.log("Decimal ID: " + iddec);
+                //eventemitter
+                emitter.emit('id recieved', iddec);
                 id = '' //clear
         }
         else {
@@ -30,3 +35,5 @@ reader.open(function () {
         }
 	});
 });
+
+module.exports = emitter;
