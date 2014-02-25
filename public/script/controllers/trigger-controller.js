@@ -20,6 +20,6 @@ triggerApp.controller('TriggerController', function ($scope) {
 
   $scope.triggerClick = function(sw) {
   	results.push({ text: "Trigger clicked: " + sw.label });
-    socket.emit('trigger', sw);
+    socket.emit('trigger', sw.label);
   };
 });
