@@ -15,7 +15,7 @@
     "ejs": "*",
     "less-middleware": "*",
     "johnny-five": "0.7.17",
-    "socket.io": "*"
+    "socket.io": "*",
     "serialport": "*"
   }
   

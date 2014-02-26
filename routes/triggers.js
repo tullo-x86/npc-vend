@@ -3,7 +3,7 @@
  * GET triggers page.
  */
 
-var rfidEventEmitter = require('rfidvendo');
+var rfidEventEmitter = require('../rfidvendo');
 
 exports.view = function(req, res) {
     res.render('triggers', { });
