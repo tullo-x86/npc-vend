@@ -18,6 +18,11 @@ triggerApp.controller('TriggerController', function ($scope) {
     $scope.$apply();
   });
 
+  socket.on('auth', function (id) {
+    results.push({ text: "User authenticated: " + JSON.stringify(id)});
+    $scope.$apply();
+  });
+
   $scope.triggerClick = function(sw) {
   	results.push({ text: "Trigger clicked: " + sw.label });
     socket.emit('trigger', sw.label);
