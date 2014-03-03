@@ -15,7 +15,11 @@
       pressing one of the momentary switches on the vending machine.
     </p>
     <div>
-      <input type="text" ng-model="rfidCode" /><button type="button" ng-click="rfidScan(rfidCode)">Scan</button>
+      <form ng-submit="rfidScan(rfidCode)">
+        <!-- Hidden submit button to make enter press work -->
+        <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;" />
+        <input type="text" ng-model="rfidCode" /><button type="button" ng-click="rfidScan(rfidCode)">Scan</button>
+      </form>
     </div>
     <ul class="switches">
       <li ng-repeat="sw in switches">

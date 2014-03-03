@@ -20,8 +20,8 @@ triggerApp.controller('TriggerController', function ($scope) {
     $scope.$apply();
   });
 
-  socket.on('auth', function (id) {
-    results.push({ text: "User authenticated: " + JSON.stringify(id)});
+  socket.on('authn', function (id, isGenuine) {
+    results.push({ text: "Server authn" + (isGenuine ? "" : " (fake)") + ": " + id});
     $scope.$apply();
   });
 
@@ -31,7 +31,7 @@ triggerApp.controller('TriggerController', function ($scope) {
   };
 
   $scope.rfidScan = function (code) {
-    results.push({ text: "SENT: scanned " + code });
-    socket.emit('fakeScan', code);
+    results.push({ text: "Sending fake authn for id " + code });
+    socket.emit('fakeAuthn', code);
   }
 });

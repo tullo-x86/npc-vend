@@ -6,7 +6,8 @@
 var express = require('express');
 var routes = require('./routes'); // ./routes/index.js
 var test = require('./routes/test');
-var triggers = require('./routes/triggers');
+var TriggersPage = require('./routes/triggers');
+var events = require('events');
 
 var http = require('http');
 var path = require('path');
@@ -35,14 +36,17 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
+// TODO: replace this with the EventEmiter from rfidVendo
+var authnEmitter = new events.EventEmitter();
+
+var triggersPage = new TriggersPage(io.sockets, authnEmitter);
+
 app.get('/', routes.index);
 app.get('/test', test.route);
-app.get('/triggers', triggers.view);
+app.get('/triggers', triggersPage.view);
 
 app.set('title', 'Express Test App');
 
 server.listen(app.get('port'), function(){
     console.log('Express server listening on port ' + app.get('port'));
 });
-
-triggers.setupSocketIo(io.sockets);
