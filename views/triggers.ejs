@@ -12,8 +12,11 @@
     <h1>Triggers</h1>
     <p>
       This page fakes events which would normally be caused by the user
-      pressing one of the momentary switches on the vending machine
+      pressing one of the momentary switches on the vending machine.
     </p>
+    <div>
+      <input type="text" ng-model="rfidCode" /><button type="button" ng-click="rfidScan(rfidCode)">Scan</button>
+    </div>
     <ul class="switches">
       <li ng-repeat="sw in switches">
         <button type="button" class="switch" ng-click="triggerClick(sw)">{{ sw.label }}</button>

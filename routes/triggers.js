@@ -3,7 +3,7 @@
  * GET triggers page.
  */
 
-var rfidEventEmitter = require('../rfidvendo');
+//var rfidEventEmitter = require('../rfidvendo');
 
 exports.view = function(req, res) {
     res.render('triggers', { });
@@ -17,9 +17,9 @@ exports.setupSocketIo = function(sockets) {
 	    	console.log('trigger fired: ' + JSON.stringify(data));
 	  	});
 
-		rfidEventEmitter.on('id recieved', function(id) {
+		/*rfidEventEmitter.on('id recieved', function(id) {
 			socket.emit('auth', id);
-		});
+		});*/
 	});
 }
 

@@ -10,6 +10,8 @@ triggerApp.controller('TriggerController', function ($scope) {
   	});
   }
 
+  $scope.rfidCode = "123456";
+
   var results = $scope.results = [{text:"Initialised."}];
 
   var socket = io.connect('http://localhost');
@@ -27,4 +29,9 @@ triggerApp.controller('TriggerController', function ($scope) {
   	results.push({ text: "Trigger clicked: " + sw.label });
     socket.emit('trigger', sw.label);
   };
+
+  $scope.rfidScan = function (code) {
+    results.push({ text: "SENT: scanned " + code });
+    socket.emit('fakeScan', code);
+  }
 });
