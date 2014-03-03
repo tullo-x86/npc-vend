@@ -36,7 +36,7 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-// TODO: replace this with the EventEmiter from rfidVendo
+// TODO: replace this with the EventEmiter from rfidvendo
 var authnEmitter = new events.EventEmitter();
 
 var triggersPage = new TriggersPage(io.sockets, authnEmitter);

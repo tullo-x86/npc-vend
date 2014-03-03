@@ -14,6 +14,12 @@
       This page fakes events which would normally be caused by the user
       pressing one of the momentary switches on the vending machine.
     </p>
+    <% if (fakeAuthnWarning) { %>
+      <div style="background:#dbb;">
+        <h2 style="color: #a00;">WARNING: The triggers page was not provided an instance of rfidvendo as its event source</h2>
+        <p>check the TriggersPage constructor invocation in app.js
+      </div>
+    <% } %>
     <div>
       <form ng-submit="rfidScan(rfidCode)">
         <!-- Hidden submit button to make enter press work -->

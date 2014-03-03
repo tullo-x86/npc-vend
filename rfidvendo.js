@@ -13,6 +13,7 @@ var com = require("serialport"),
   }, true); // this is the openImmediately flag [default is true anyway]
 
 var emitter = new events.EventEmitter;
+emitter.IS_RFID = true;
 
 reader.open(function () {
   console.log('open'); // wait for device to open, then confirm.

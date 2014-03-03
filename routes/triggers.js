@@ -7,12 +7,14 @@
 
 /// CTOR
 /// sockets [socket.io]: required
+/// authnEmitter [EventEmitter]: required. Can be the RFID authenticator or
+///								 any EventEmitter which emits an 'authn' event.
 module.exports = function TriggersPage(sockets, authnEmitter) {
 	var Sockets = sockets;
 	var self = this;
 
 	this.view = function(req, res) {
-	    res.render('triggers', { });
+	    res.render('triggers', { fakeAuthnWarning: (!authnEmitter.IS_RFID) });
 	};
 
 	sockets.on('connection', function (socket) {
