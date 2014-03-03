@@ -26,11 +26,11 @@ module.exports = function TriggersPage(sockets, authnEmitter) {
 
 	  	socket.on('fakeAuthn', function onFakeAuthn(id) {
 	  		console.log('Fake authentication from Triggers page: ' + id);
-	  		authnEmitter.emit('authn', self, id);
+	  		authnEmitter.emit('authn', false, id);
 	  	});
 
-	  	authnEmitter.on('authn', function onAuthn(source, id) {
-	  		socket.emit('authn', id, !(source instanceof TriggersPage));
+	  	authnEmitter.on('authn', function onAuthn(isGenuine, id) {
+	  		socket.emit('authn', isGenuine, id);
 	  	});
 
 		/*rfidEventEmitter.on('id recieved', function(id) {

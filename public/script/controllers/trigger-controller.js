@@ -20,8 +20,8 @@ triggerApp.controller('TriggerController', function ($scope) {
     $scope.$apply();
   });
 
-  socket.on('authn', function (id, isGenuine) {
-    results.push({ text: "Server authn" + (isGenuine ? "" : " (fake)") + ": " + id});
+  socket.on('authn', function (isGenuine, id) {
+    results.push({ text: "Server authn" + (isGenuine === true ? "" : " (fake)") + ": " + id});
     $scope.$apply();
   });
 
