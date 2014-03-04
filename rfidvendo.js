@@ -3,7 +3,7 @@ var com = require("serialport"),
     id = '';
 // variable we regenerate the code into from binary chunks
 
-  var reader = new com.SerialPort("/dev/ttyAMA0" , {
+  var reader = new com.SerialPort("rfiddev" , {
     baudRate: 9600,
     dataBits: 8,
     parity: 'none',
