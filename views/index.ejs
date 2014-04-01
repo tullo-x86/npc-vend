@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="indexApp">
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/styles/base.css' />
     <script type='text/javascript' src='/script/lib/angular.min.js'></script>
+    <script type='text/javascript' src='/script/controllers/index-controller.js'></script>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body ng-controller="MainController">
+
+    <div class="debug">
+      <button type="button" ng-click="debugStateReady()">Ready</button>
+      <button type="button" ng-click="debugStateWelcome()">Welcome</button>
+      <button type="button" ng-click="debugStateSelected()">Selected</button>
+    </div>
+
+    <div class="main">
+      <!-- READY STATE: Waiting for a user to log in -->
+      <div ng-if="state == 'ready'">
+        <fieldset>
+          <legend>HSBNE vending machine</legend>
+          <p>Please scan your HSBNE membership card to begin.</p>
+        </fieldset>
+      </div>
+
+      <!-- WELCOME STATE: Waiting for a selection -->
+      <div ng-if="state == 'welcome'">
+        <fieldset>
+          <legend>Welcome, {{user.name}}!</legend>
+          <p>Please make a selection using the buttons on the vending machine.</p>
+        </fieldset>
+      </div>
+
+      <!-- SELECTED STATE: Waiting for user to confirm purchase -->
+      <div ng-if="state == 'selected'">
+        <fieldset>
+          <legend>{{user.name}}</legend>
+          <div class="content">
+            <h1>{{item.name}}</h1>
+            <h2>Price: {{formatCurrency(item.price)}}</h2>
+            <h2>Your balance: {{formatCurrency(user.balance)}}</h2>
+            <button type="button" ng-click="confirmPurchase()" class="fullwidth confirm">Purchase</button>
+            <button type="button" ng-click="cancelPurchase()" class="fullwidth cancel">Cancel</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
   </body>
 </html>
