@@ -5,19 +5,26 @@
     <link rel='stylesheet' href='/styles/base.css' />
     <script type='text/javascript' src='/script/lib/angular.min.js'></script>
     <script type='text/javascript' src='/script/controllers/index-controller.js'></script>
+    <script type='text/javascript' src='/script/controllers/app-state-machine.js'></script>
   </head>
   <body ng-controller="MainController">
 
     <div class="debug">
-      <button type="button" ng-click="debugStateReady()">Ready</button>
-      <button type="button" ng-click="debugStateSelected()">Selected</button>
-      <button type="button" ng-click="debugStateConfirmRich()">Confirm (rich user)</button>
-      <button type="button" ng-click="debugStateConfirmPoor()">Confirm (poor user)</button>
+      <div>
+          Current state: {{stateMachine.getStateName()}}
+      </div>
+      <button type="button" ng-click="debugStateReady()">Reset</button><br/>
+      <button type="button" ng-click="debugStateSelected()">Select "Strawberry Shortcake"</button><br/>
+      <button type="button" ng-click="debugStateConfirmRich()">Log on as RICH user</button>
+      <button type="button" ng-click="debugStateConfirmPoor()">Log on as POOR user</button><br/>
+      <button type="button" ng-click="debugServerAllow()">Server says ALLOW purchase</button>
+      <button type="button" ng-click="debugServerDeny('you\'re too poor')">Server says DENY purchase</button>
+
     </div>
 
     <div class="main">
       <!-- WELCOME STATE: Waiting for a selection -->
-      <div ng-if="state == 'ready'">
+      <div ng-if="stateMachine.getStateName() == 'welcome'">
         <fieldset>
           <legend>HSBNE vending machine</legend>
           <p>Please make a selection to begin.</p>
@@ -25,26 +32,58 @@
       </div>
 
       <!-- SELECTED STATE: Waiting for user to log in -->
-      <div ng-if="state == 'selected'">
+      <div ng-if="stateMachine.getStateName() == 'itemSelection'">
         <fieldset>
           <legend>HSBNE vending machine</legend>
           <div class="content">
-            <h1>{{item.name}}</h1>
-            <h3>Price: {{formatCurrency(item.price)}}</h3>
+            <h1>{{stateMachine.getItem().name}}</h1>
+            <h3>Price: {{formatCurrency(stateMachine.getItem().price)}}</h3>
           </div>
         </fieldset>
       </div>
 
       <!-- CONFIRM STATE: Waiting for authenticated user to confirm purchase -->
-      <div ng-if="state == 'confirm'">
+      <div ng-if="stateMachine.getStateName() == 'confirmPurchase'">
         <fieldset>
-          <legend>{{user.name}}</legend>
+          <legend>{{stateMachine.getUser().name}}</legend>
           <div class="content">
-            <h1>{{item.name}}</h1>
-            <h3>Price: {{formatCurrency(item.price)}}</h3>
-            <h3>Your balance: {{formatCurrency(user.balance)}}</h3>
+            <h1>{{stateMachine.getItem().name}}</h1>
+            <h3>Price: {{formatCurrency(stateMachine.getItem().price)}}</h3>
+            <h3>Your balance: {{formatCurrency(stateMachine.getUser().balance)}}</h3>
             <button type="button" ng-click="confirmPurchase()" ng-disabled="!canAffordItem()" class="fullwidth confirm">Purchase</button>
             <button type="button" ng-click="cancelPurchase()" class="fullwidth cancel">Cancel</button>
+          </div>
+        </fieldset>
+      </div>
+
+      <div ng-if="stateMachine.getStateName() == 'waitForTransaction'">
+        <fieldset>
+          <legend>{{stateMachine.getUser().name}}</legend>
+          <div class="content">
+            <h1>Please wait...</h1>
+            <p>Contacting the server to confirm your purchase...</p>
+            <div class="spinner">$</div>
+          </div>
+      </div>
+
+      <div ng-if="stateMachine.getStateName() == 'transactionSuccessful'">
+        <fieldset>
+          <legend>{{stateMachine.getUser().name}}</legend>
+          <div class="content">
+            <h1>Please wait...</h1>
+            <p>Vending {{stateMachine.getItem().name}}...</p>
+            <div class="spinner">&#171;</div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div ng-if="stateMachine.getStateName() == 'transactionFailed'">
+        <fieldset>
+          <legend>{{stateMachine.getUser().name}}</legend>
+          <div class="content">
+            <h1>Transaction failed</h1>
+            <p>The server denied the transaction, stating:</p>
+            <p class="failure">{{stateMachine.getFailureReason()}}</p>
           </div>
         </fieldset>
       </div>
