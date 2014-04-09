@@ -1,0 +1,702 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"Over",
+				"overlapRatio"
+			],
+			[
+				"str",
+				"streetWidth"
+			],
+			[
+				"out",
+				"outerIdx"
+			],
+			[
+				"blo",
+				"blockRadiusLookup"
+			],
+			[
+				"inn",
+				"innerStreet"
+			],
+			[
+				"city",
+				"cityWithDoubleBlocks"
+			],
+			[
+				"pol",
+				"polyg	polygon"
+			],
+			[
+				"cloc",
+				"clockHourToDegrees"
+			],
+			[
+				"po",
+				"polyg	polygon"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Program-flow.md",
+			"settings":
+			{
+				"buffer_size": 772,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.ejs",
+			"settings":
+			{
+				"buffer_size": 1833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/script/controllers/index-controller.js",
+			"settings":
+			{
+				"buffer_size": 678,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/triggers.ejs",
+			"settings":
+			{
+				"buffer_size": 1562,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/styles/base.less",
+			"settings":
+			{
+				"buffer_size": 638,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 1456,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/index.js",
+			"settings":
+			{
+				"buffer_size": 161,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"commen",
+				"Toggle Comment"
+			],
+			[
+				"wwr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ssmar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ssmark",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ssopens",
+				"Set Syntax: OpenSCAD"
+			],
+			[
+				"ssc+",
+				"Set Syntax: C++"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"indensp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"ssc++",
+				"Set Syntax: C++"
+			],
+			[
+				"sssca",
+				"Set Syntax: OpenSCAD"
+			],
+			[
+				"ssc",
+				"Set Syntax: C++"
+			],
+			[
+				"sscpp",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"ssopen	",
+				"Set Syntax: OpenSCAD"
+			],
+			[
+				"sssc",
+				"Set Syntax: OpenSCAD"
+			],
+			[
+				"ssscad	",
+				"Set Syntax: OpenSCAD"
+			],
+			[
+				"ssop",
+				"Set Syntax: OpenSCAD"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 167.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/tullo/code/git/npc-vend/public/script/controllers/testview.js",
+		"/home/tullo/code/git/exjs/routes/test.js",
+		"/home/tullo/code/git/exjs/routes/user.js",
+		"/home/tullo/code/git/exjs/.gitignore",
+		"/home/tullo/code/git/exjs/.gititignore",
+		"/home/tullo/code/git/exjs/public/javascripts/angular.min.js",
+		"/home/tullo/code/git/exjs/public/javascripts/angular.min.js.map",
+		"/home/tullo/code/git/exjs/public/stylesheets/style.less",
+		"/home/tullo/code/git/exjs/public/stylesheets/style.css",
+		"/home/tullo/code/git/exjs/package.json",
+		"/home/tullo/code/git/exjs/app.js",
+		"/home/tullo/code/node/app.js",
+		"/home/tullo/code/node/package.json",
+		"/home/tullo/code/git/npc-vend/node_modules/johnny-five/lib/board.js",
+		"/home/tullo/code/git/npc-vend/server.js",
+		"/usr/share/npm/node_modules/npm-registry-client/lib/get.js",
+		"/home/tullo/.bashrc",
+		"/usr/share/npm/lib/utils/npm-registry-client/get.js",
+		"/media/tullo/548da502-ebde-45c0-9ab2-de5e2431ee0b/home/pi/.config/midori/bookmarks.db",
+		"/home/tullo/upgradeCommand.txt",
+		"/home/tullo/Pictures/Cards_Against_Humanity_Mailing_List.vcf",
+		"/usr/share/mediatomb/js/common.js",
+		"/usr/share/mediatomb/js/import.js",
+		"/usr/share/mediatomb/js/playlists.js",
+		"/etc/mediatomb/config.xml",
+		"/home/tullo/code/mediatomb-0.12.1/README",
+		"/home/tullo/code/mediatomb-0.12.1/debian/rules",
+		"/home/tullo/.mediatomb/config.xml",
+		"/home/tullo/.local/share/Steam/SteamApps/common/Game Dev Tycoon/64/gamedevtycoon",
+		"/home/tullo/.local/share/Steam/SteamApps/common/Game Dev Tycoon/64/README",
+		"/home/tullo/.local/share/Steam/SteamApps/common/Game Dev Tycoon/64/fontconfig/04aabc0a78ac019cf9454389977116d2-le64.cache-3",
+		"/home/tullo/.local/share/Steam/SteamApps/common/Game Dev Tycoon/start.sh",
+		"/home/tullo/music_convert.sh",
+		"/usr/local/bin/rip-cd",
+		"/home/tullo/Documents/3D Printing/BRC Medallion/Medallion.scad",
+		"/home/tullo/Documents/3D Printing/Triforce/triforce.scad",
+		"/home/tullo/Documents/3D Printing/Triforce/Libs.scad",
+		"/home/tullo/code/git/blink2/zweiten/src/hsv.cpp",
+		"/home/tullo/code/git/blink2/zweiten/include/hsv.h",
+		"/home/tullo/code/git/blink2/zweiten/src/main.cpp",
+		"/home/tullo/code/git/blink2/zweiten/src/PlasmaPulsePattern.cpp",
+		"/home/tullo/sketchbook/Port-Hack-Interactive-Clock/ClockMasterNtpClient/ClockMasterNtpClient.ino",
+		"/home/tullo/code/git/blink2/zweiten/include/PlasmaPulsePattern.h",
+		"/home/tullo/Documents/steam tcp connections",
+		"/etc/udev/rules.d/51-android.rules",
+		"/home/tullo/Ghost.colors",
+		"/home/tullo/libpeerconnection.log",
+		"/usr/bin/startx",
+		"/etc/X11/xinit/xserverrc",
+		"/home/tullo/ysinfo",
+		"/etc/X11/Xsession",
+		"/etc/X11/xinit/xinitrc",
+		"/etc/kde4/kdm/kdmrc",
+		"/usr/share/X11/xorg.conf.d/80-displaydpi.conf",
+		"/home/tullo/Documents/3D Printing/Triforce/lLibs.scad",
+		"/home/tullo/Documents/3D Printing/Libs.scad",
+		"/home/tullo/sketchbook/Port-Hack-Interactive-Clock/ClockRtc/ClockRtc.ino",
+		"/home/tullo/Arduino/arduino-1.0.5/arduino",
+		"/home/tullo/Arduino/DS1307RTC/DS1307RTC.cpp",
+		"/home/tullo/Arduino/DS1307RTC/DS1307RTC.h",
+		"/home/tullo/Arduino/DS1307RTC/keywords.txt",
+		"/home/tullo/Arduino/DS1307RTC/readme.txt",
+		"/home/tullo/Arduino/time/release_notes.txt",
+		"/home/tullo/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/tullo/Desktop/cast.sh",
+		"/usr/share/arduino/libraries/Ethernet/examples/WebServer/WebServer.ino",
+		"/home/tullo/Arduino/arduino-1.0.5/libraries/Ethernet/examples/WebServer/WebServer.ino",
+		"/home/tullo/Documents/3D Printing/BRC Medallion/CityMapAdditive.scad",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/eye-logo.scad",
+		"/home/tullo/Arduino/PulseWave/WS2811.h",
+		"/etc/apt/sources.list",
+		"/home/tullo/Documents/3D Printing/BRC Medallion/Composite.scad",
+		"/home/tullo/Arduino/PulseWave/PulseWave.ino",
+		"/home/tullo/Documents/3D Printing/Router Stand/stand.scad",
+		"/home/tullo/Documents/3D Printing/Router Stand/stand.stl",
+		"/home/tullo/Downloads/The.Hobbit.An.Unexpected.Journey.48fps.Edition.3D.2012.1080p.BluRay.Half-OU.DTS.x264-HDMaNiAcS.nfo",
+		"/usr/share/arduino/libraries/Ethernet/Ethernet.h",
+		"/home/tullo/Arduino/Clock/Clock.ino",
+		"/home/tullo/code/git/blinkenlichten/das-blinkenlichten/.gitignore",
+		"/home/tullo/.arduino/preferences.txt",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-master/old_single_plate/README",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-master/old_single_plate/src/compact-extruder.scad",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-master/old_single_plate/src/dual-extruder.scad",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-master/old_single_plate/src/belt-guide.scad",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-master/old_single_plate/src/x-end-motor.scad",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-master/old_single_plate/src/y-idler.scad",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-master/old_single_plate/configuration.scad-dist",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-vanilla-master/README",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-master/README.md",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/Prusa3-vanilla-master/src/bearing.scad",
+		"/home/tullo/Documents/3D Printing/i3 Printed Parts/bearing-guide.stl",
+		"/home/tullo/Downloads/Read This Guide Now.txt",
+		"/home/tullo/Documents/3D Printing/BRC Medallion/CityMap.scad",
+		"/home/tullo/xpad/makefile",
+		"/home/tullo/Documents/3D Printing/BRC Medallion/ManLogo.scad",
+		"/home/tullo/Documents/3D Printing/Medallion/ManWithHoleInHead.scad",
+		"/home/tullo/Documents/3D Printing/Medallion/blank.scad",
+		"/home/tullo/sketchbook/LedRings/pinout",
+		"/home/tullo/code/git/dancing-leds/rings.js",
+		"/home/tullo/Documents/3D Printing/Medallion/minktest.scad",
+		"/home/tullo/sketchbook/libraries/readme.txt",
+		"/home/tullo/sketchbook/Port-Hack-Interactive-Clock/ClockSlave/ClockSlave.ino",
+		"/home/tullo/pcb/LedRing/gafrc",
+		"/usr/share/arduino/libraries/Time/Time.h",
+		"/home/tullo/sketchbook/Port-Hack-Interactive-Clock/ClockMaster/ClockMaster.ino",
+		"/home/tullo/Downloads/Time/Examples/Processing/SyncArduinoClock/SyncArduinoClock.pde",
+		"/home/tullo/sketchbook/UdpNtpClient/UdpNtpClient.ino",
+		"/home/tullo/sketchbook/ClockSlave/ClockSlave.ino",
+		"/home/tullo/sketchbook/ClockSlave/WS2811.h",
+		"/home/tullo/sketchbook/ClockMaster/ClockMaster.ino",
+		"/home/tullo/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/tullo/.config/sublime-text-3/Packages/User/Plain text.sublime-settings"
+	],
+	"find":
+	{
+		"height": 58.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/>\n",
+			"sw",
+			"id3",
+			"config_op",
+			"mp4v2",
+			"id3",
+			"js",
+			"js support",
+			"javascript",
+			"compile",
+			"comp",
+			"transc",
+			"dpi",
+			"memset",
+			"hsv.s",
+			"hsv.v",
+			"IPAddress",
+			"http://mirror.overthewire.com.au/ubuntu/",
+			"130",
+			"IPAddress",
+			"portalToBlock",
+			"radial",
+			"porta",
+			"axialStreet",
+			"street",
+			"setTimeoutForNextInterval",
+			"receiveAndParseTime",
+			"receiveNtpPacket",
+			"now()",
+			"myIP",
+			"myIp",
+			"IP",
+			"ip",
+			"sendNTPpacket",
+			"0x01"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"http://au.archive.ubuntu.com/ubuntu/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Program-flow.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 772,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								519,
+								519
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/index.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1382,
+								1382
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 63.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/script/controllers/index-controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								376,
+								376
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/triggers.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/styles/base.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								551,
+								551
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								400,
+								400
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 189.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "routes/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "npc-vend.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 33.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
