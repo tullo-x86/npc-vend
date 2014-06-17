@@ -30,7 +30,7 @@ reader.open(function (err) {
             iddec = parseInt(idshort, 16); // turn it from hex to decimal
             console.log("Decimal ID: " + iddec);
             //eventemitter
-            emitter.emit('id recieved', iddec);
+            emitter.emit('authn', true, iddec);
             id = '' //clear
         }
         else {
