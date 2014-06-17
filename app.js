@@ -37,7 +37,7 @@ if ('development' == app.get('env')) {
 }
 
 // TODO: replace this with the EventEmiter from rfidvendo
-var authnEmitter = require('./rfidvendo.js').emitter;
+var authnEmitter = require('./rfidvendo.js');
 
 var triggersPage = new TriggersPage(io.sockets, authnEmitter);
 
