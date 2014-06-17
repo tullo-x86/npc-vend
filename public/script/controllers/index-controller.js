@@ -14,7 +14,7 @@ indexApp.controller('MainController', function ($scope) {
 
   function setResetTimeout() {
     clearResetTimeout();
-    resetTimeout = setTimeout(onReset, 2000);
+    resetTimeout = setTimeout(onReset, 20000);
   }
 
   function clearResetTimeout() {

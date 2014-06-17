@@ -15,8 +15,11 @@ var com = require("serialport"),
 var emitter = new events.EventEmitter;
 emitter.IS_RFID = true;
 
-reader.open(function () {
-  console.log('open'); // wait for device to open, then confirm.
+reader.open(function (err) {
+  if ( err )
+  { console.log('fuck the serial is broken'); }
+  else
+{  console.log('open'); // wait for device to open, then confirm.
   reader.on('data', function(chunk) {
     chunk = chunk.toString('ascii') // data comes in binary chunks, so make data ascii
         id += chunk; // Concat hex chars to the forming id
@@ -34,6 +37,6 @@ reader.open(function () {
             console.log('nope, not yet');
         }
 	});
-});
+}});
 
 module.exports = emitter;
