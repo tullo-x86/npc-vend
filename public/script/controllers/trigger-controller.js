@@ -14,7 +14,7 @@ triggerApp.controller('TriggerController', function ($scope) {
 
   var results = $scope.results = [{text:"Initialised."}];
 
-  var socket = io.connect('http://localhost');
+  var socket = io.connect(window.location.protocol + '//' + window.location.host + ":" + (window.location.port || "80"));
   socket.on('init', function (data) {
     results.push({ text: "socket.io initialised"});
     $scope.$apply();
