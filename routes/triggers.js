@@ -30,7 +30,8 @@ module.exports = function TriggersPage(sockets, authnEmitter) {
 	  	});
 
 	  	authnEmitter.on('authn', function onAuthn(isGenuine, id) {
-	  		socket.emit('authn', isGenuine, id);
+        console.log("authn emit detected " + id);
+//	  		socket.emit('authn', isGenuine, id);
 	  	});
 
 		/*rfidEventEmitter.on('id recieved', function(id) {
