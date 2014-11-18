@@ -2,7 +2,7 @@ var five = require("johnny-five"),
   board = new five.Board(),
   sleep = require('sleep');
 
-board.on('ready') {
+board.on("ready", function() {
 	for (var i = 22; i < 46; i++) {
 
   var relay = new five.Relay(i);
